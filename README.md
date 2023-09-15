@@ -45,13 +45,13 @@ sh test.sh
 此前需要：
 1. 将label与img的映射关系（label_to_img.json）放置在ECGAN目录下
 2. 修改test.sh，其内容为：
-
+```
 CUDA_VISIBLE_DEVICES="0" python test.py  \
 --input_path {测试数据集路径（即labels文件夹所在路径），它提供label mask图} \
 --img_path {训练数据集的图片路径（即train_resized/imgs文件夹所在路径，它提供ref图）}\
 --ed_path {训练数据集的边缘图片路径（即train_resized/edge文件夹所在路径，它提供edge图）}\
 --which_epoch {使用的模型的epoch数目}\
-
+```
 
 ####生成结果
 可点击selects文件夹查看部分生成结果
